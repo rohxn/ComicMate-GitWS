@@ -21,25 +21,26 @@ font-size: 2.5vw;
 margin: 0;
 }
 section { 
-min-height: vh; 
+min-height: 5vh; 
 display: flex;
 justify-content: center;
 align-content: center;
+width: 100%;
 }
 section { 
     border: 7px solid black;
 padding: 3rem; 
 }
-section:nth-of-type(1) {
+section:nth-of-type(2) {
 background: #d52b21;
 }
-section:nth-of-type(2) {
+section:nth-of-type(3) {
 background: #fff;
 }
-section:nth-of-type(3) {
+section:nth-of-type(4) {
 background: #0388fe;
 }
-section:nth-of-type(4) {
+section:nth-of-type(5) {
     background: #e6ff56;
 }
 blockquote.bubble { 
@@ -77,10 +78,7 @@ font-size: 3vw;
 font-weight: bold;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-}
+
 
 blockquote{
     border: none;
@@ -103,4 +101,11 @@ blockquote{
 body{
     background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
     background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+}
+
+.title{
+    background: #000; 
+    color: yellow; 
+    font-size: 50px;
+    font-family:  "Bangers",SequentialistBB, cursive, sans-serif;
 }
