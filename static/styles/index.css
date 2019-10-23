@@ -64,7 +64,7 @@ p,
 ul,
 li,
 ol {
-  font-family: 'Happy Monkey', cursive;
+  font-family: 'Bangers', cursive;
   color: #222;
 }
 
@@ -184,7 +184,7 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   width: 98%;
   max-width: 943px;
   height: auto;
-  min-height: 220px;
+  min-height: 200px;
   top: .5em;
   left: 1.5em;
   position: relative;
@@ -221,7 +221,6 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
 
 .comic .triple.double .comic-pane .text .holder {
   width: 85%;
-  line-height: 1.2em;
   margin-top: 1.5em;
   margin-left: 2em;
   -webkit-transform: skew(15deg);
@@ -248,7 +247,7 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   margin-top: 0.25em;
 }
 .comic .triple.double .two-thirds .comic-pane .text p {
-  font-size: .9em;
+  font-size: 1.5em;
 }
 
 /*===========================

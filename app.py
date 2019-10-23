@@ -13,11 +13,13 @@ def test():
     path = 'data/'
     files = os.listdir(path)
     result = []
+    colours = ['blue', 'red', 'green', 'orange', 'pink', 'yellow']
     for file in files:
         with open("data/"+file, 'r') as f:
             result.append(json.load(f))
     print(result)
-    return "Hello akshay"
+    return render_template('index.html', artists = result, colours = colours)
+
 
 @app.route('/<name>')
 def get_contents(name):

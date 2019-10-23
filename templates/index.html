@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey|Patrick+Hand+SC&display=swap|Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+    <title>Comic Mate</title>
+</head>
+<body>
+  <div class="whole-container">
+    {% for i in range(0, artists|length, 2) %}
+      <section class="comic panel {{colours[(i//2)%6]}}">
+        <div class="double triple inner">
+          <div class="two-thirds left" id="">
+          <div class="comic-pane">
+          <div class="text">
+            <div class="holder">
+              <h2 class="yellow">{{artists[i].title}}</h2>
+              <p>By {{artists[i].name}}</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        {% if i+1!=artists|length %}
+          <div class="double triple inner">
+            <div class="two-thirds left" id="">
+            <div class="comic-pane">
+            <div class="text">
+              <div class="holder">
+              <h2 class="yellow">{{artists[i+1].title}}</h2>
+              <p>By {{artists[i+1].name}}</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        {% endif %}
+      </section>
+    {% endfor %}
+  </div>
+</body>
+</html>
