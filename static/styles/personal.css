@@ -12,24 +12,24 @@
     font-style: italic;
     font-weight: 400;
     }
-* { 
+* {
 box-sizing: border-box;
 }
-body { 
-font-family: SequentialistBB, cursive; 
-font-size: 2.5vw; 
+body {
+font-family: SequentialistBB, cursive;
+font-size: 2.5vw;
 margin: 0;
 }
-section { 
-min-height: 5vh; 
+section {
+min-height: 5vh;
 display: flex;
 justify-content: center;
 align-content: center;
 width: 100%;
 }
-section { 
+section {
     border: 7px solid black;
-padding: 3rem; 
+padding: 3rem;
 }
 section:nth-of-type(2) {
 background: #d52b21;
@@ -43,7 +43,7 @@ background: #0388fe;
 section:nth-of-type(5) {
     background: #e6ff56;
 }
-blockquote.bubble { 
+blockquote.bubble {
 background-position: center;
 background-repeat: no-repeat !important;
 background-size: 100% 100%;
@@ -52,13 +52,14 @@ box-sizing: content-box;
 line-height: 1;
 }
 blockquote.speech {
-background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
 width: 100%;
 padding-top: 6%;
 padding-bottom: 20%;
+background-size: 100% 100%;
 }
 blockquote.whisper {
-background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg); 
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/whisper.svg);
 width: 75%;
 font-size: 2vw;
 color: #555;
@@ -66,7 +67,7 @@ font-style: italic;
 padding: 6% 5% 15%;
 }
 blockquote.electric {
-background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg); 
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
 width: 75%;
 font-size: 2.4vw;
 font-style: italic;
@@ -90,12 +91,12 @@ blockquote{
     width: 80%;
     height: 100%;
     margin: auto;
-    
+
 }
 
 .birdy{
     width: 100%;
-    
+
 }
 
 body{
@@ -104,8 +105,8 @@ body{
 }
 
 .title{
-    background: #000; 
-    color: yellow; 
+    background: #000;
+    color: yellow;
     font-size: 50px;
     font-family:  "Bangers",SequentialistBB, cursive, sans-serif;
 }
