@@ -19,7 +19,16 @@ def test():
     print(result)
     return "Hello akshay"
 
-@app.route('/'):
+@app.route('/<name>')
+def get_contents(name):
+    try:
+        with open(f"data/{name}.json", 'r') as f:
+            return jsonify(json.load(f))
+    except:
+        return jsonify({
+            'msg': 'File not found',
+            'success': False
+        })
 
 if __name__ == '__main__':
       app.run(host='0.0.0.0', port=1233)
