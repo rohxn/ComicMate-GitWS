@@ -262,3 +262,16 @@ END // Comic (Content) Panes
   border: 1px dashed red;
   height: 6200px;
 }
+
+header.main {
+  margin: 0;
+  width: 100%;
+  display: block;
+  min-height: 250px;
+  border-top: none;
+}
+header.main h1.big {
+  width: auto;
+  line-height: .75em;
+  margin-top: .5em;
+}
