@@ -18,6 +18,9 @@
 </head>
 <body>
     <div class="container">
+        <section class="footer" style="background: #000; color: #fff; font-size: 50px;">
+                {{Title}}
+        </section>
         <section>
             <div class="row">
                 <div class="col s6">
@@ -25,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col s6">
-                <blockquote class="speech bubble"><div style="width: 75%; margin: 20px 30px;">Hello I am <em>{{Name}}</em></div></blockquote>
+                <blockquote class="speech bubble"><div style="width: 75%; margin: 10% 10%;">Hello I am <b>{{Name}}</b></div></blockquote>
                 </div>
             </div>
            
@@ -34,7 +37,7 @@
                 <div class="row">
                         
                         <div class="col s6">
-                        <blockquote class="whisper bubble" style="float: right;"><div style="width: 65%; margin: 20px 30px;">{{quote1}}</div></blockquote>
+                        <div style="float: right; border: 5px solid black; width: 100%"><div style="width: 65%; margin: 10% 10%;">{{quote1}}</div></div>
                         </div>
                         <div class="col s6">
                                 <div class="char_cont"><img src="https://www.stickpng.com/assets/images/584c69846e7d5809d2fa6366.png" class="birdy" style="transform: scaleX(-1);"></img>
@@ -44,13 +47,13 @@
         </section>
 
         <section>
-                <div class="row">
+                <div class="row" style="width: 80%;">
                     <div class="col s6">
                         <div class="char_cont"><img src="https://vignette.wikia.nocookie.net/angrybirds/images/d/dd/Blues_240.png/revision/latest?cb=20130419123057" class="birdy"></img>
                     </div>
                     </div>
                     <div class="col s6">
-                    <blockquote class="speech bubble"><div style="width: 75%; margin: 20px 30px;">{{quote2}}</div></blockquote>
+                    <blockquote class="speech bubble"><div style="width: 75%; margin: 10% 10%;">{{quote2}}</div></blockquote>
                     </div>
                 </div>
                
@@ -60,7 +63,7 @@
                         
                         
                         <div class="col s6">
-                        <blockquote class="electric bubble" style="float: right;"><div style="width: 65%; margin: 20px 30px;">{{quote3}}</div></blockquote>
+                        <blockquote class="electric bubble" style="float: right;"><div style="width: 65%; margin: 10% 10%;">{{quote3}}</div></blockquote>
                         </div>
                         <div class="col s6">
                                 <div class="char_cont"><img src="https://www.konfest.com/wp-content/uploads/2019/07/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-angry-bird-cartoon-emoticon-expression-blue-2.png" class="birdy" style="transform: scaleX(-1);"></img>
@@ -69,7 +72,7 @@
                 </div>
         </section>
         <section class="footer" style="background: #000; color: #fff;">
-            Comic By: Akshay<br/>
+            Comic By: {{Name}}<br/>
             Developed By: CodeCell
         </section>
         
