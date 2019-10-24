@@ -1,7 +1,7 @@
 {
-    "name": "MANAN",
-    "title": "HELLO WORLD!",
-    "quote_1": "int main()",
-    "quote_2": "cout<< Hello World!",
-    "quote_3": "return 0"
+    "name": "Name",
+    "title": "Title of the comic",
+    "quote_1": "Quote 1",
+    "quote_2": "Quote 2",
+    "quote_3": "Quote 3"
 }
