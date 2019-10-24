@@ -19,9 +19,12 @@ def test():
     colours = ['blue', 'red', 'green', 'orange', 'pink', 'yellow']
     for file in files:
         with open("data/"+file, 'r') as f:
-            json_data = json.load(f)
-            json_data['slug'] = file[:-5]
-            result.append(json_data)
+            try:
+                json_data = json.load(f)
+                json_data['slug'] = file[:-5]
+                result.append(json_data)
+            except Exception as e:
+                print(e)
     print(result)
     return render_template('index.html', artists=result, colours=colours)
 
