@@ -10,7 +10,11 @@ app = Flask(__name__)
 @app.route('/')
 def test():
     path = 'data/'
-    files = os.listdir(path)
+    files = [s for s in os.listdir(path)
+         if os.path.isfile(os.path.join(path, s))]
+    files.sort(key=lambda s: os.path.getmtime(os.path.join(path, s)))
+
+    print(files)
     result = []
     colours = ['blue', 'red', 'green', 'orange', 'pink', 'yellow']
     for file in files:
